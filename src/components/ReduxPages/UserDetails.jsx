@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
-import { fakeName } from '../API';
-import { addUser } from '../store/UserSlice';
+import { fakeName } from '.../API';
+import { addUser } from '.../store/UserSlice';
 import DisplayUser from './DisplayUser';
 
 
