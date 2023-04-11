@@ -1,10 +1,13 @@
-import React from 'react'
-import { useDispatch } from 'react-redux'
+import React from 'react';
+import { useDispatch } from 'react-redux';
 import { clearUsers } from '../store/UserSlice';
+import { v1 } from 'uuid';
 
 function DeleteUser() {
     const dispatch = useDispatch();
     const clearAll = () => {
+        let obj = v1();
+        console.log(obj);
         dispatch(clearUsers());
     }
   return (
